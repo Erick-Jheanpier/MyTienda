@@ -1,4 +1,3 @@
-// components/Filters/PriceFilter.tsx
 import React from 'react';
 import { Form } from 'react-bootstrap';
 
@@ -15,10 +14,11 @@ const PriceFilter: React.FC<PriceFilterProps> = ({
     <Form.Select
       value={selectedOrder}
       onChange={(e) => onOrderChange(e.target.value)}
+      className="form-select"
     >
       <option value="">Ordenar por precio</option>
-      <option value="asc">Menor a mayor</option>
       <option value="desc">Mayor a menor</option>
+      <option value="asc">Menor a mayor</option>
     </Form.Select>
   </Form.Group>
 );

@@ -1,0 +1,50 @@
+.product-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--card-text);
+    transition: all 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+  }
+  
+  .card-image {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--card-border);
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    color: var(--card-text);
+    font-size: 1.1rem;
+    min-height: 3rem;
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+    color: var(--card-text);
+    opacity: 0.8;
+    min-height: 4rem;
+  }
+  
+  .price {
+    color: var(--card-text);
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  .category-badge {
+    background-color: var(--badge-primary);
+    color: white;
+  }
+  
+  .brand-badge {
+    background-color: var(--badge-secondary);
+    color: white;
+  }
